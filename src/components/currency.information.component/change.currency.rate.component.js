@@ -10,7 +10,8 @@ class ChangeCurrencyRate extends Component {
             askPrevious: null,
             askCurrent: null,
             bidPrevious: null,
-            bidCurrent: null, bid: null,
+            bidCurrent: null,
+            bid: null,
         };
     }
 

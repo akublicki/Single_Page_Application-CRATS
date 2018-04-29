@@ -18,7 +18,6 @@ class App extends PureComponent {
                     <TopNav/>
                     <SideMenu/>
                 </header>
-        //        {console.log()}
                 <main>
                     <MuiThemeProvider>
                         <CurrencyInformation/>

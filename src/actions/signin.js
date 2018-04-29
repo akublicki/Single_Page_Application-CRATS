@@ -18,16 +18,14 @@ const signOut = () => {
 
 export const openGoogleSignIn = () => {
     return (dispatch) => {
-        {console.log(this.state)}
-
         auth.signInWithPopup(provider)
             .then(result => dispatch(signIn(result.user)))
             .catch(error => dispatch(presentError('Error while signin in')));
     }
 };
 
-export const openGoogleSignOut =()=>{
-    return()=>{
+export const openGoogleSignOut = () => {
+    return () => {
         auth.signOut()
             .then(() => signOut())
             .catch(() => presentError('Error while signin out'));

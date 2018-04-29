@@ -17,44 +17,45 @@ export default class SideMenu extends React.Component {
         return (
             <MuiThemeProvider>
                 <div>
-                <Drawer
-                    containerClassName={"sideBar"}
-                    zDepth={0}
-                    open={this.state.open}
-                >
-                    <Link to="/" style={styles.link}>
-                        <MenuItem innerDivStyle={styles.menuItemTop}
-                                  onMouseEnter={(e) => e.target.style.color= appColors.orange}
-                        onMouseLeave={(e) => e.target.style.color = appColors.creamy}
-                        >
-                            Dashboard
-                    </MenuItem>
-                    </Link>
-                    <Link to="/map" style={styles.link}>
-                        <MenuItem innerDivStyle={styles.menuItem}
-                                  onMouseEnter={(e) => e.target.style. color= appColors.orange}
-                        onMouseLeave={(e) => e.target.style.color = appColors.creamy}
-                        >
-                            Waluty Świata
-                    </MenuItem></Link>
-                    <Link to="/search" style={styles.link}>
-                        <MenuItem innerDivStyle={styles.menuItem}
-                                  onMouseEnter={(e) => e.target.style.color = appColors.orange}
-                                  onMouseLeave={(e) => e.target.style.color = appColors.creamy}
-                        >
-                            Wyszukaj
-                        </MenuItem>
-                    </Link>
-                    <Link to="/favorites" style={styles.link}>
-                        <MenuItem innerDivStyle={styles.menuItem}
-                                  onMouseEnter={(e) => e.target.style.color = appColors.orange}
-                                  onMouseLeave={(e) => e.target.style.color = appColors.creamy}
-                        >
-                            Ulubione
-                        </MenuItem>
-                    </Link>
-                </Drawer>
-            </div></MuiThemeProvider>
+                    <Drawer
+                        containerClassName={"sideBar"}
+                        zDepth={0}
+                        open={this.state.open}
+                    >
+                        <Link to="/" style={styles.link}>
+                            <MenuItem innerDivStyle={styles.menuItemTop}
+                                      onMouseEnter={(e) => e.target.style.color = appColors.orange}
+                                      onMouseLeave={(e) => e.target.style.color = appColors.creamy}
+                            >
+                                Dashboard
+                            </MenuItem>
+                        </Link>
+                        <Link to="/map" style={styles.link}>
+                            <MenuItem innerDivStyle={styles.menuItem}
+                                      onMouseEnter={(e) => e.target.style.color = appColors.orange}
+                                      onMouseLeave={(e) => e.target.style.color = appColors.creamy}
+                            >
+                                Waluty Świata
+                            </MenuItem></Link>
+                        <Link to="/search" style={styles.link}>
+                            <MenuItem innerDivStyle={styles.menuItem}
+                                      onMouseEnter={(e) => e.target.style.color = appColors.orange}
+                                      onMouseLeave={(e) => e.target.style.color = appColors.creamy}
+                            >
+                                Wyszukaj
+                            </MenuItem>
+                        </Link>
+                        <Link to="/favorites" style={styles.link}>
+                            <MenuItem innerDivStyle={styles.menuItem}
+                                      onMouseEnter={(e) => e.target.style.color = appColors.orange}
+                                      onMouseLeave={(e) => e.target.style.color = appColors.creamy}
+                            >
+                                Ulubione
+                            </MenuItem>
+                        </Link>
+                    </Drawer>
+                </div>
+            </MuiThemeProvider>
         );
     }
 }
